@@ -1,0 +1,17 @@
+{
+  "platform-version": "2.2",
+  "product": {
+    "freshservice": {
+      "location": {
+        "full_page_app": {
+          "url": "views/full-page-app.html",
+          "icon": "styles/images/icon.svg"
+        },
+        "ticket_sidebar": {
+          "url": "views/ticket-sidebar.html",
+          "icon": "styles/images/icon.svg"
+        }
+      }
+    }
+  }
+}
