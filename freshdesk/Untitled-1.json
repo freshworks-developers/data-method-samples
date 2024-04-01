@@ -14,28 +14,24 @@
         "ticket_sidebar": {
           "url": "views/sidebar.html",
           "icon": "styles/images/icon.svg"
+        },
+        "new_email_requester_info": {
+          "url": "views/requesterpage.html",
+          "icon": "styles/images/icon.svg"
         }
       }
     },
     "support_contact": {
       "location": {
         "contact_sidebar": {
-          "url": "views/fullpage.html",
-          "icon": "styles/images/icon.svg"
-        }
-      }
-    },
-    "support_email": {
-      "location": {
-        "new_email_requester_info": {
-          "url": "views/fullpage.html",
+          "url": "views/contactpage.html",
           "icon": "styles/images/icon.svg"
         }
       }
     }
   },
   "engines": {
-    "node": "18.16.1",
+    "node": "18.18.0",
     "fdk": "9.1.0"
   }
 }
