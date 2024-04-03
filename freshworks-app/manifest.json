@@ -17,10 +17,26 @@
         }
       }
     },
+    "service_ticket": {
+      "location": {
+        "ticket_sidebar": {
+          "url": "views/sidebar.html",
+          "icon": "styles/images/icon.svg"
+        }
+      }
+    },
     "support_contact": {
       "location": {
         "contact_sidebar": {
           "url": "views/fullpage.html",
+          "icon": "styles/images/icon.svg"
+        }
+      }
+    },
+    "deal": {
+      "location": {
+        "deal_entity_menu": {
+          "url": "views/default.html",
           "icon": "styles/images/icon.svg"
         }
       }
