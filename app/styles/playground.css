@@ -1,0 +1,40 @@
+@import url('./common.css');
+
+.hf-app--playground .hf-body {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.hf-playground-tabs {
+  flex: 1;
+  min-height: 0;
+}
+
+.hf-playground-tabs fw-tab-panel {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.hf-panel-intro {
+  margin: 0 0 8px;
+  font-size: 11px;
+  color: #6b7c93;
+}
+
+.hf-active-key {
+  margin: 0 0 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #12344d;
+}
+
+.hf-active-key code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 11px;
+  color: #0d9488;
+  background: #ecfdf5;
+  padding: 1px 5px;
+  border-radius: 3px;
+}

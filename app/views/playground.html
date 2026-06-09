@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HealthFirst Data Playground</title>
+    <script async src="{{{appclient}}}"></script>
+    <link rel="stylesheet" href="../styles/playground.css" />
+  </head>
+  <body>
+    <div class="hf-app hf-app--playground">
+      <header class="hf-header">
+        <div class="hf-header__mark">
+          <fw-icon name="first-aid-kit" size="16" color="#0D9488"></fw-icon>
+        </div>
+        <div class="hf-header__text">
+          <span class="hf-header__brand">HealthFirst Clinics</span>
+          <span class="hf-header__title">Data method playground</span>
+          <span id="surface-meta" class="hf-header__meta">Loading…</span>
+        </div>
+      </header>
+
+      <div class="hf-body">
+        <p class="hf-muted">
+          Click a key to call <code>client.data.get()</code> and render JSON from the current page — no REST requests.
+        </p>
+
+        <p id="active-key" class="hf-active-key">Select a data key to fetch page context.</p>
+
+        <fw-tabs id="data-tabs" class="hf-playground-tabs"></fw-tabs>
+
+        <div id="data-result" class="hf-result-wrap" hidden></div>
+      </div>
+    </div>
+
+    <script async type="module" src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.esm.js"></script>
+    <script async nomodule src="https://cdn.jsdelivr.net/npm/@freshworks/crayons@v4/dist/crayons/crayons.js"></script>
+    <script src="../scripts/lib/data-playground.js"></script>
+    <script defer src="../scripts/playground.js"></script>
+  </body>
+</html>

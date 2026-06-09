@@ -1,0 +1,78 @@
+{
+  "platform-version": "3.0",
+  "modules": {
+    "common": {
+      "location": {
+        "full_page_app": {
+          "url": "views/playground.html",
+          "icon": "styles/images/icon.svg"
+        },
+        "cti_global_sidebar": {
+          "url": "views/playground.html",
+          "icon": "styles/images/icon.svg"
+        }
+      }
+    },
+    "support_ticket": {
+      "location": {
+        "ticket_sidebar": {
+          "url": "views/playground.html",
+          "icon": "styles/images/icon.svg"
+        }
+      }
+    },
+    "service_ticket": {
+      "location": {
+        "ticket_sidebar": {
+          "url": "views/playground.html",
+          "icon": "styles/images/icon.svg"
+        }
+      }
+    },
+    "support_contact": {
+      "location": {
+        "contact_sidebar": {
+          "url": "views/playground.html",
+          "icon": "styles/images/icon.svg"
+        }
+      }
+    },
+    "support_portal": {},
+    "service_change": {
+      "location": {
+        "change_sidebar": {
+          "url": "views/playground.html",
+          "icon": "styles/images/icon.svg"
+        }
+      }
+    },
+    "service_asset": {
+      "location": {
+        "asset_sidebar": {
+          "url": "views/playground.html",
+          "icon": "styles/images/icon.svg"
+        }
+      }
+    },
+    "service_user": {
+      "location": {
+        "contact_sidebar": {
+          "url": "views/playground.html",
+          "icon": "styles/images/icon.svg"
+        }
+      }
+    },
+    "deal": {
+      "location": {
+        "deal_entity_menu": {
+          "url": "views/playground.html",
+          "icon": "styles/images/icon.svg"
+        }
+      }
+    }
+  },
+  "engines": {
+    "node": "24.11.0",
+    "fdk": "10.1.2"
+  }
+}
