@@ -1,10 +1,20 @@
 (function () {
   const MAX_SIDEBAR_HEIGHT = '720px';
+  const CRAYONS_TAGS = ['fw-tabs', 'fw-tab', 'fw-tab-panel', 'fw-button', 'fw-icon'];
 
   init();
 
+  async function waitForCrayons() {
+    await Promise.all(
+      CRAYONS_TAGS.map(function (tag) {
+        return customElements.whenDefined(tag);
+      })
+    );
+  }
+
   async function init() {
     try {
+      await waitForCrayons();
       const client = await app.initialized();
       client.events.on('app.activated', onActivated);
       await onActivated();

@@ -59,7 +59,8 @@ window.HealthFirstDataPlayground = (function () {
     {
       id: 'crm',
       label: 'CRM',
-      intro: 'Freshworks CRM entity context.',
+      intro:
+        'Freshworks CRM entity context — open from a deal page (deal_entity_menu). On Freshdesk ticket sidebar, currentEntityInfo will error by design.',
       keys: [{ key: 'currentEntityInfo', label: 'currentEntityInfo' }]
     }
   ];
@@ -130,18 +131,20 @@ window.HealthFirstDataPlayground = (function () {
 
   function buildTabs(client, tabsRoot, resultEl, activeKeyEl) {
     tabsRoot.innerHTML = '';
+    tabsRoot.setAttribute('active-tab-name', DATA_CATALOG[0].id);
 
     DATA_CATALOG.forEach((section, index) => {
       const tab = document.createElement('fw-tab');
       tab.setAttribute('slot', 'tab');
-      tab.textContent = section.label;
+      tab.setAttribute('panel', section.id);
+      tab.setAttribute('name', section.label);
       if (index === 0) {
         tab.setAttribute('active', '');
       }
       tabsRoot.appendChild(tab);
 
       const panel = document.createElement('fw-tab-panel');
-      panel.setAttribute('slot', 'panel');
+      panel.setAttribute('name', section.id);
 
       const intro = document.createElement('p');
       intro.className = 'hf-panel-intro';
